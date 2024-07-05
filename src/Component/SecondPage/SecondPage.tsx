@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+// import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
+
 import DepartmentList from '../DepartmentList/DepartmentList';
 import { Post } from '../../Container/types';
 import CircularProgress from '@mui/material/CircularProgress';
@@ -53,7 +55,6 @@ const SecondPage: React.FC = () => {
           <DataGrid
             rows={posts}
             columns={columns}
-            pageSize={10}
             checkboxSelection
             disableRowSelectionOnClick
             />
